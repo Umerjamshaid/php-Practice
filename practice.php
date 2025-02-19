@@ -6,46 +6,28 @@ This is a multi-line comment
 */
 
 // PHP code starts with <?php and ends with ?--->
+echo "Hello, World!";
 
-// Displaying output
-echo "Hello, World!"; // Outputs: Hello, World!
 
-// Variables in PHP
-$greeting = "Hello"; // String variable
-$number = 42; // Integer variable
-
-// Concatenation of strings
-echo $greeting . ", World!"; // Outputs: Hello, World!
-
-// Conditional statements
-if ($number > 40) {
-    echo "The number is greater than 40"; // Outputs: The number is greater than 40
-} else {
-    echo "The number is 40 or less";
-}
-
-// Loops in PHP
-for ($i = 0; $i < 5; $i++) {
-    echo $i; // Outputs: 01234
-}
-
-// Functions in PHP
-function add($a, $b) {
-    return $a + $b;
-}
-
-echo add(5, 3); // Outputs: 8
-
-// Arrays in PHP
-$fruits = array("Apple", "Banana", "Cherry");
-echo $fruits[1]; // Outputs: Banana
-
-// Associative arrays
-$age = array("Peter" => 35, "Ben" => 37, "Joe" => 43);
-echo $age["Ben"]; // Outputs: 37
-
-// Looping through an array
-foreach ($fruits as $fruit) {
-    echo $fruit; // Outputs: AppleBananaCherry
-}
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+  <!-- have a button POST a click via AJAX -->
+  <button hx-post="/clicked" hx-swap="outerHTML">
+    Click Me
+  </button>
+</body>
+</html>
+
+
+
